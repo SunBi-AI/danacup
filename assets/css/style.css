@@ -1,0 +1,152 @@
+:root {
+  --font-family: "Mukta", sans-serif;
+  --primary: white;
+  --primaryrgb: 162, 1, 162;
+  --topheader: #f8f8f8;
+  --ontopheader: #444444;
+  --border-radius: 5px;
+  --img-hover-time: 0.9s;
+  --title-hover-time: 0.3s;
+  --footer-bg: #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+body {
+  --margin: 2.5rem;
+  background: #f7f7f7;
+  background-position: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #010101;
+  margin: 0;
+  font-weight: 600;
+}
+
+a:hover,
+a:focus,
+a {
+  outline-style: none;
+  text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: 0.3s all;
+}
+
+.btn-primary:hover {
+  background: none;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.h-500 {
+  height: 500px !important;
+}
+
+.featured {
+  object-position: top;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/*****************************************
+    DAAN CUP HERO SECTION
+*****************************************/
+
+.danacup__hero.hero__section {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(".././img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__section {
+  padding: 30px 0;
+}
+
+.hero__section .sub_text_top h3 {
+  text-align: center;
+}
+
+.sub_text_top,
+.main_text_top,
+.cta__button {
+  color: white;
+  text-align: center;
+}
+
+.sub_text_top {
+  h3 {
+    color: var(--primary);
+  }
+}
