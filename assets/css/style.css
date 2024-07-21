@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
 :root {
   --font-family: "Mukta", sans-serif;
   --primary: white;
@@ -25,20 +29,42 @@ a {
 body {
   --margin: 2.5rem;
   background: #f7f7f7;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
   background-position: center;
-  font-family: var(--font-family);
-  font-weight: 500;
+  color: var(--primary);
+  overflow: hideen;
+  /* font-family: var(--font-family); */
+  /* font-weight: 500; */
 }
 
-h1,
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.archivo {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.red-hat-display {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #010101;
-  margin: 0;
-  font-weight: 600;
+  font-family: "Anton", sans-serif;
 }
 
 a:hover,
@@ -128,6 +154,7 @@ a {
   background-image: url(".././img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .hero__section {
@@ -148,5 +175,198 @@ a {
 .sub_text_top {
   h3 {
     color: var(--primary);
+    text-transform: uppercase;
+    font-size: 2rem;
   }
+}
+
+.main_text_top h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: white;
+}
+.main_text_top h1 span {
+  font-size: 7rem;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.main_text_top h1 span:not(:first-child) {
+  margin-left: 1.5rem;
+}
+/* 
+.hero__content__wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+
+.font__outline {
+  color: var(--primary);
+  background-color: (var(--primary));
+  -webkit-text-stroke-color: var(--primary);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #fffefe; */
+  /* opacity: 0.1; */
+}
+
+.logo__image__goals {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-40%, -110%);
+}
+
+.logo__image__goals img {
+  width: 300px;
+}
+
+.team__players__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -53%);
+  width: 100%;
+  text-align: center;
+}
+
+.team__players__img img {
+  width: 45%;
+}
+
+.hero__spacer__middle {
+  height: 500px;
+}
+
+.cta__button {
+  position: relative;
+  z-index: 10;
+}
+
+.cta_btn_main {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  border-radius: 15px;
+  outline: transparent;
+  border: 1px transparent;
+  color: #00c2cb;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cta_btn_main:hover {
+  opacity: 0.85;
+}
+
+.bottom__information__links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--primary);
+}
+
+.bottom__information__links .email__information {
+  display: flex;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.bottom__information__links .email__information a {
+  color: VAR(--primary);
+  /* margin-left: 5px; */
+  padding: 5px 10px;
+}
+
+.bottom__information__links .menu__bottom,
+.bottom__information__links .email__information {
+  margin-top: 50px;
+}
+
+.bottom__information__links .menu__bottom nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom__information__links .menu__bottom nav ul li a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  color: var(--primary);
+  padding: 7.5px 10px;
+}
+
+.bottom__information__links .menu__bottom nav ul li a::before {
+  position: absolute;
+  content: "";
+  transition: transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform: translateX(-100%);
+}
+
+.bottom__information__links .menu__bottom nav ul li a:hover::before {
+  transform: translateX(0);
+}
+
+.bottom__information__links .menu__bottom nav ul li:first-child a {
+  margin-right: 15px;
+}
+
+.bottom__information__links .menu__bottom nav ul li:not(:first-child) a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.ml-15 {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  padding: 7.5px 10px;
+  margin-bottom: 5px;
+}
+
+/* .bottom__information__links .menu__bottom nav ul li:not(:first-child)::before {
+  content: "|";
+  display: inline-block;
+  width: 2px;
+  margin-right: 15px;
+} */
+
+.bottom__information__links .email__information i.fa-envelope,
+.bottom__information__links .email__information a,
+.bottom__information__links .menu__bottom li a {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.bottom__information__links .email__information .fa-envelope {
+  padding: 5px 10px;
+}
+
+.hero__section__mask {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8323530095632002) 52%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.3;
 }

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DanaCup</title>
 
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/responsive.css" />
     <link
@@ -31,56 +34,64 @@
   </head>
   <body>
     <div class="hero__section danacup__hero">
+      <div class="hero__section__mask"></div>
       <div class="container">
         <div class="row">
-          <div class="sub_text_top">
-            <h3>only participant from nepal</h3>
-          </div>
-          <div class="main_text_top">
-            <h1>
-              dana
-              <p class="">cup</p>
-              2024
-            </h1>
-          </div>
-
-          <div class="logo__image__goals">
-            <img
-              src="./assets/img/logo_dana.png"
-              a
-              lt="goals football academy club"
-            />
-          </div>
-
-          <div class="team__players__img">
-            <img
-              src="./assets/img/team.png"
-              alt="football academy club official team"
-            />
-          </div>
-
-          <div class="cta__button">
-            <button class="cta_btn_main">click for schedule</button>
-          </div>
-
-          <div class="bottom__information__links">
-            <div class="email__information">
-              <a href="mailto: info@goalsfanepal.com">Info@goalsfanepal</a>
+          <div class="hero__content__wrapper">
+            <div class="sub_text_top">
+              <h3 class="anton-regular">only participant from nepal</h3>
             </div>
-            <div class="menu__bottom">
-              <nav>
-                <ul>
-                  <li>
-                    <a href="">About</a>
-                  </li>
-                  <li>
-                    <a href="">Contact</a>
-                  </li>
-                  <li>
-                    <a href="">Apply</a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="main_text_top">
+              <h1>
+                <span class="archivo">dana</span>
+                <span class="archivo font__outline">cup</span>
+                <span class="archivo">2024</span>
+              </h1>
+            </div>
+
+            <div class="hero__spacer__middle"></div>
+
+            <div class="logo__image__goals">
+              <img
+                src="./assets/img/logo_dana.png"
+                a
+                lt="goals football academy club"
+              />
+            </div>
+
+            <div class="team__players__img">
+              <img
+                src="./assets/img/team.png"
+                alt="football academy club official team"
+              />
+            </div>
+
+            <div class="cta__button">
+              <button class="cta_btn_main">click for schedule</button>
+            </div>
+
+            <div class="bottom__information__links">
+              <div class="email__information">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto: info@goalsfanepal.com">Info@goalsfanepal</a>
+              </div>
+              <div class="menu__bottom">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="">About</a>
+                    </li>
+                    <li class="ml-15">|</li>
+                    <li>
+                      <a href="">Contact</a>
+                    </li>
+                    <li class="ml-15">|</li>
+                    <li>
+                      <a href="">Apply</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
         </div>
