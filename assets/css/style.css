@@ -12,6 +12,7 @@
   --img-hover-time: 0.9s;
   --title-hover-time: 0.3s;
   --footer-bg: #000;
+  --color-accent: #00c2cb;
 }
 
 * {
@@ -143,6 +144,10 @@ a {
   flex: 1;
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
 /*****************************************
     DAAN CUP HERO SECTION
 *****************************************/
@@ -159,6 +164,10 @@ a {
 
 .hero__section {
   padding: 30px 0;
+}
+
+.hero__section .sub_text_top {
+  margin-top: 30px;
 }
 
 .hero__section .sub_text_top h3 {
@@ -216,11 +225,12 @@ a {
   top: 50%;
   left: 50%;
   z-index: 1;
-  transform: translate(-40%, -110%);
+  transform: translate(-46%, -100%);
+  text-align: center;
 }
 
 .logo__image__goals img {
-  width: 300px;
+  width: 40%;
 }
 
 .team__players__img {
@@ -238,7 +248,7 @@ a {
 }
 
 .hero__spacer__middle {
-  height: 500px;
+  height: 50vh;
 }
 
 .cta__button {
@@ -284,7 +294,7 @@ a {
 
 .bottom__information__links .menu__bottom,
 .bottom__information__links .email__information {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .bottom__information__links .menu__bottom nav ul {
@@ -351,7 +361,7 @@ a {
 }
 
 .bottom__information__links .email__information .fa-envelope {
-  padding: 5px 10px;
+  padding: 5px 0px;
 }
 
 .hero__section__mask {
@@ -369,4 +379,49 @@ a {
     rgba(0, 0, 0, 0) 100%
   );
   opacity: 0.3;
+}
+
+/************************************
+  MODAL FOR HOMEPAGE
+************************************/
+.modal__single {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 80%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 1);
+}
+
+.modal__content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 15px;
+  border: 1 px solid #888;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.close__modal {
+  color: var(--color-accent);
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  .fa-circle-xmark {
+    font-size: 3rem;
+  }
+}
+
+.close:hover,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
